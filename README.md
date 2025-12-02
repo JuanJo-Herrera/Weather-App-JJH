@@ -1,21 +1,29 @@
-[Usuario]
-   |
-   | 1. Escribe una ciudad en el input
+# 📝 Weather App
+
+Una aplicación para consultar el clima de tú ciudad.
+
+## ✨ ¿Cómo usar?
+
+
+- ✅  1. Escribe una ciudad en el input                   📊
    v
 [Formulario de búsqueda]
    - Controlado con useState(cityInput)
    - Botón "Agregar ciudad"
+ 
    |
-   | 2. Submit
+
+- ✅  2. Submit                                           💾
    v
 [Lista de ciudades guardadas]
    - Estado useState(cities = [...])
    - Evitamos duplicados
    - Renderizamos una tarjeta por ciudad
    |
-   | 3. Por cada ciudad en cities
+
+- ✅  3. Por cada ciudad en cities
    v
-[<WeatherCard city="aguascalientes" />]
+[<WeatherCard city="aguascalientes" />]                    🔍
    - Cuando recibe la prop city:
         - usa useEffect para "simular fetch"
         - busca datos en FAKE_WEATHER_DB
@@ -25,12 +33,12 @@
             • Humedad
             • Estados: "loading", "ready", "error"
    |
-   | 4. Botón "✕" en cada tarjeta
+- ✅  4. Botón "✕" en cada tarjet
    v
-[Remover ciudad de la lista]
+[Remover ciudad de la lista]                                🗑️
    - setCities(cities.filter(...))
 
-Extra:
+- 🎨 Extra:
 [Botón Contador ajeno]
    - Cambia unrelatedCount
    - No tiene nada que ver con el clima
