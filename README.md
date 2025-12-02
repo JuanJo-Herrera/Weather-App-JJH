@@ -1,6 +1,3 @@
-
-
-```mermaid
 [Usuario]
    |
    | 1. Escribe una ciudad en el input
